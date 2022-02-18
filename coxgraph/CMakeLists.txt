@@ -9,6 +9,8 @@ add_definitions(-std=c++17 -Werror)
 find_package(OpenMP REQUIRED)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
 
+# set specific path
+set(Open3D_DIR /home/v1otusc/open3d_install/lib/cmake/Open3D)
 find_package(Open3D REQUIRED)
 
 include_directories(${Open3D_INCLUDE_DIRS})
