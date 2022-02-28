@@ -81,8 +81,8 @@ bool CoxgraphClient::getClientSubmapCallback(
 }
 
 bool CoxgraphClient::getAllClientSubmapsCallback(
-    coxgraph_msgs::SubmapsSrv::Request& request,      // NOLINT
-    coxgraph_msgs::SubmapsSrv::Response& response) {  // NOLINT
+    coxgraph_msgs::SubmapsSrv::Request& request,
+    coxgraph_msgs::SubmapsSrv::Response& response) {
   LOG(INFO) << log_prefix_
             << "Server is requesting all submaps! pausing submap process";
   uint8_t trials_ = 0;
